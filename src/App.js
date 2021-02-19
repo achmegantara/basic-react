@@ -3,14 +3,14 @@ import './App.css';
 
 function App() {
 
-  const userLogged = "achmad akbar";
-  const userLoggedJSX = <strong>Achmad akbar</strong>;
-
-
   return (
-    <div className="App">
-      {userLogged}
-      {userLoggedJSX}
+    <div>
+      <h1>
+        Belajar with ega
+      </h1>
+      <p>
+        Meningkatkan keahlian design dan coding secara onling dan cepat.
+      </p>
     </div>
   );
 }
