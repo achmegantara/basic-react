@@ -40,6 +40,11 @@ function CheckDiscount(props){
 function ProdukInfo(props) {
   //object destruction
   const { category, name, isDiscount } = props;
+  const benefit = ["Tidak kusut terkena air", "Bahan lebih halus", "Tidak gerah"];
+  const listBenefits = benefit.map((itemBenefit) => 
+    <li>{itemBenefit}</li>
+  );
+
   const price = 74000000;
   return (
     <div>
@@ -51,6 +56,9 @@ function ProdukInfo(props) {
         <p className="info">
           One of the most recognizable shoes in the AJ collections, the Air Jordan Retro features lightweight, visible cushioning just like the original from '88. 
         </p>
+        <ul>
+          {listBenefits}
+        </ul>
         <a onClick={(e) => TambahCart(name,e)} href="#">Add to Cart</a>
       </div>
     </div>
