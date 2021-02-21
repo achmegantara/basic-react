@@ -31,14 +31,14 @@ function ProdukInfo(props) {
         <p className="info">
           One of the most recognizable shoes in the AJ collections, the Air Jordan Retro features lightweight, visible cushioning just like the original from '88. 
         </p>
-        <a onClick={TambahCart} href="#">Add to Cart</a>
+        <a onClick={(e) => TambahCart(name,e)} href="#">Add to Cart</a>
       </div>
     </div>
   );
 }
 
-function TambahCart(){
-return console.log("Membeli produk...");
+function TambahCart(e){
+return console.log("Membeli produk " + e);
 }
 
 export default App;
